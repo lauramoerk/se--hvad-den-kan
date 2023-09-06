@@ -14,10 +14,10 @@ let containers = [container1,container2,container3,container4,container5,contain
 console.log(containers);
 
 function generateRandomNumber() {
-    return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random() * 11);
 }
 function generateRandomAnimation(){
-    return Math.floor(Math.random() * 3)
+    return Math.floor(Math.random() * 4);
 }
 
 function initializeSprites(){
