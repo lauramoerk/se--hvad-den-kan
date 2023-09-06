@@ -36,6 +36,15 @@
     }
   }
 
+
+  .fallDown0 {
+    animation-name: falling;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
   .fallDown {
     animation-name: falling;
     animation-duration: 5s;
@@ -59,68 +68,26 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+
+  @keyframes fadeOut{
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
+.fading{
+    animation: fadeOut 3s;
+}
+
+
 /*game sprite containers*/  
 
-#container1 {
+.container {
     position: absolute;
     width: 10%;
     aspect-ratio: 1/0.96;
 
   }
-  
-  #container2 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
-  
-  #container3 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
-  
-  #container4 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
-  
-  #container5 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
-  
-  #container6 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
 
-  #container7 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
-
-  #container8 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
-
-  #container9 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
-
-  #container10 {
-    position: absolute;
-    width: 10%;
-    aspect-ratio: 1/0.96;
-  }
 
 
   /*game sprite id's*/  
@@ -209,53 +176,53 @@
   
 /* sprite postions*/
 
-.position1 {
+.position0 {
   left: 30%;
   top: -18%;
 }
 
-.position2 {
+.position1 {
   left: 48%;
   top: -44%;
 }
 
-.position3 {
+.position2 {
   left: 10%;
   top: -50%;
 }
 
-.position4 {
+.position3 {
   left: 70%;
   top: -12%;
 }
 
-.position5 {
+.position4 {
   left: 90%;
   top: -32%;
 }
 
-.position6 {
+.position5 {
   left: 40%;
   top: -27%;
 }
 
-.position7 {
+.position6 {
     left: 40%;
     top: -27%;
   }
   
 
-.position8 {
+.position7 {
     left: 60%;
     top: -37%;
   }
 
-  .position9 {
+  .position8 {
     left: 52%;
     top: -15%;
   }
 
-  .position10 {
+  .position9 {
     left: 34%;
     top: -67%;
   }
