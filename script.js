@@ -1,6 +1,6 @@
 
 // make array of containers
-
+let point = 0;
 let containers = document.querySelectorAll('.container')
 
 // check containers in log
@@ -23,17 +23,27 @@ containers[i].classList.add("fallDown" + generateRandomAnimation());
 // add random position
 containers[i].classList.add("position" + generateRandomNumber());
 containers[i].addEventListener("click" , fadeOut);
+containers[i].addEventListener("click" , clickedEl);
 }
-
-
 }
 
 initializeSprites();
 // add fade animation when sprites are clicked
  
 function fadeOut(e){
-
  //add random fallDown class
  e.target.classList.add('fading');
 
 }
+
+// add points
+function clickedEl(){
+point++;
+pointCounter();
+}
+
+// points
+function pointCounter(){ 
+    document.querySelector("#scoretext").innerHTML = point +" / 10";
+}
+

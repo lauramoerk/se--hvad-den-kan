@@ -75,7 +75,7 @@
 }
 
 .fading{
-    animation: fadeOut 3s;
+    animation: fadeOut 1s;
 }
 
 
@@ -85,7 +85,19 @@
     position: absolute;
     width: 10%;
     aspect-ratio: 1/0.96;
+  }
 
+  #scorecontainer{
+    position: absolute;
+    top: 20px;
+left: 20px;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+
+  #scoretext{
+    margin: 0;
+    padding: 0;
   }
 
 
