@@ -35,6 +35,7 @@ initializeSprites();
 
 
 
+
 // Initialize all sprites
 // container1.classList.add("fallDown2");
 // container1.classList.add("position5");
