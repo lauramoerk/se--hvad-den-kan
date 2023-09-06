@@ -1,0 +1,271 @@
+
+
+#screen {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 16/9;
+    border: 4px solid black;
+    margin-left: 8%;
+  }
+  
+  #game {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    overflow: hidden;
+  }
+  
+  #game_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+   background-color: red;
+  }
+
+/*Animation*/
+
+@keyframes falling {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateY(1000%);
+    }
+  }
+
+  .fallDown {
+    animation-name: falling;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .fallDown2 {
+    animation-name: falling;
+    animation-duration: 4s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+   
+  .fallDown3 {
+    animation-name: falling;
+    animation-duration: 6s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+/*game sprite containers*/  
+
+#container1 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+
+  }
+  
+  #container2 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+  
+  #container3 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+  
+  #container4 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+  
+  #container5 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+  
+  #container6 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+
+  #container7 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+
+  #container8 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+
+  #container9 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+
+  #container10 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/0.96;
+  }
+
+
+  /*game sprite id's*/  
+  
+  #a_sprite1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+
+  #a_sprite2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+  
+
+  #a_sprite3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+  
+  #a_sprite4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+  
+  #a_sprite5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+ 
+  #a_sprite6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+  
+
+  #a_sprite7 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+  
+  #a_sprite8 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+  
+  #a_sprite9 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+  
+  #a_sprite10 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/money.png");
+    background-size: 100%;
+  }
+  
+/* sprite postions*/
+
+.position1 {
+  left: 30%;
+  top: -18%;
+}
+
+.position2 {
+  left: 48%;
+  top: -44%;
+}
+
+.position3 {
+  left: 10%;
+  top: -50%;
+}
+
+.position4 {
+  left: 70%;
+  top: -12%;
+}
+
+.position5 {
+  left: 90%;
+  top: -32%;
+}
+
+.position6 {
+  left: 40%;
+  top: -27%;
+}
+
+.position7 {
+    left: 40%;
+    top: -27%;
+  }
+  
+
+.position8 {
+    left: 60%;
+    top: -37%;
+  }
+
+  .position9 {
+    left: 52%;
+    top: -15%;
+  }
+
+  .position10 {
+    left: 34%;
+    top: -67%;
+  }
+
+  .stop {
+    animation-play-state: paused;
+  }
+  
+
+  .hidden {
+    visibility: hidden;
+  }
+  
