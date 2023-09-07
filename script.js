@@ -40,10 +40,16 @@ function fadeOut(e){
 function clickedEl(){
 point++;
 pointCounter();
+pointReached();
 }
 
-// points
+// make pointcounter go up
 function pointCounter(){ 
     document.querySelector("#scoretext").innerHTML = point +" / 10";
+    pointReached();
 }
 
+// stop pointcounter
+function pointReached(){
+    if (point >= 10){
+    point = 0;}} 
