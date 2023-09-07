@@ -1,10 +1,12 @@
-
+body{
+    ackground-color: #f4f4f4;
+}
 
 #screen {
     position: relative;
     width: 80%;
     aspect-ratio: 16/9;
-    border: 4px solid black;
+    border: 10px solid #273aaa;
     margin-left: 8%;
   }
   
@@ -12,8 +14,23 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: beige;
+    background-color: #f4f4f4;
     overflow: hidden;
+  }
+
+  #winscreen{
+    position: absolute;
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #playbutton{
+    align-self: center;
   }
   
   #game_background {
@@ -21,7 +38,7 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-   background-color: beige;
+   background-color: #f4f4f4;
   }
 
 /*Animation*/
@@ -85,6 +102,7 @@
     position: absolute;
     width: 10%;
     aspect-ratio: 1/0.96;
+    z-index: 5;
   }
 
   #scorecontainer{
@@ -99,6 +117,7 @@ left: 20px;
     margin: 0;
     padding: 0;
     color: #273aaa;
+    
   }
 
 
@@ -243,9 +262,9 @@ left: 20px;
   .stop {
     animation-play-state: paused;
   }
-  
 
   .hidden {
     visibility: hidden;
   }
+  
   

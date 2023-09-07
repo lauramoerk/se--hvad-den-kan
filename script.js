@@ -14,9 +14,16 @@ function generateRandomAnimation(){
     return Math.floor(Math.random() * 4);
 }
 
+// start game
+
+
+
 //make function to initializa sprites
 
 function initializeSprites(){
+    document.getElementById('winscreen').classList.add("hidden");
+    document.getElementById('playbutton').classList.add("hidden");
+
 for(let i = 0; i < containers.length; i++){
 //add random fallDown class
 containers[i].classList.add("fallDown" + generateRandomAnimation());
@@ -28,6 +35,9 @@ containers[i].addEventListener("click" , clickedEl);
 }
 
 initializeSprites();
+// }
+
+
 // add fade animation when sprites are clicked
  
 function fadeOut(e){
@@ -52,4 +62,16 @@ function pointCounter(){
 // stop pointcounter
 function pointReached(){
     if (point >= 10){
-    point = 0;}} 
+        point = 0;
+        document.getElementById('winscreen').classList.remove("hidden");
+        document.getElementById('playbutton').classList.remove("hidden");
+        document.getElementById('playbutton').addEventListener("click", restartGame);
+    }
+} 
+
+
+
+function restartGame() {
+    document.getElementById('winscreen').classList.add("hidden");
+    document.getElementById('playbutton').classList.add("hidden");
+};
