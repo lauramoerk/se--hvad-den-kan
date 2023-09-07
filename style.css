@@ -1,7 +1,29 @@
+
+@import url("https://use.typekit.net/ukx6enw.css");
+
+
 body{
     background-color: #f4f4f4;
 }
 
+h1{
+ font-family: "obviously-wide", sans-serif;
+font-weight: 900;
+font-style: italic;
+text-transform: uppercase;
+font-size: 3rem;
+color: #273aaa;
+text-align: center;
+}
+
+h2{
+    font-family: "obviously-wide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #273aaa;
+}
 #screen {
     position: relative;
     width: 80%;
@@ -20,7 +42,7 @@ body{
 
   #winscreen{
     position: absolute;
-    background-color: aquamarine;
+    background-color:#273aaa;
     width: 100%;
     height: 100%;
     z-index: 1000;
@@ -267,4 +289,27 @@ left: 20px;
     visibility: hidden;
   }
   
-  
+/* styling af knap */  
+button{
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #f4f4f4;
+    border: none;
+    font-family: "obviously-wide", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #273aaa;
+}
+
+button:hover{
+    scale: 1.2;
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+    }
+  }
