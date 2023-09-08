@@ -21,6 +21,7 @@ document.getElementById('startbutton').addEventListener("click" , hideTitle)
 function hideTitle(){
     document.getElementById('titlescreen').classList.add('hidden');
     document.getElementById('startbutton').classList.add('hidden');
+    initializeSprites;
 }
 
 
