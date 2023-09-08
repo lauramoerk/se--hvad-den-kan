@@ -51,10 +51,25 @@ h2{
 
   }
 
+  #titlescreen{
+    position: absolute;
+    background-color:#273aaa;
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    display: flex;
+    justify-content: center;
+
+  }
+
   #playbutton{
     align-self: center;
   }
   
+
+  #startbutton{
+    align-self: center;
+  }  
   #game_background {
     position: absolute;
     width: 100%;

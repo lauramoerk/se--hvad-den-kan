@@ -15,6 +15,13 @@ function generateRandomAnimation(){
 }
 
 // start game
+document.getElementById('titlescreen').classList.remove('hidden');
+document.getElementById('startbutton').addEventListener("click" , hideTitle)
+
+function hideTitle(){
+    document.getElementById('titlescreen').classList.add('hidden');
+    document.getElementById('startbutton').classList.add('hidden');
+}
 
 
 
